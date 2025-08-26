@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>জরুরি সেবা ডিরেক্টরি</title>
+    <!-- daisyUI from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- tailwinds from -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <!-- header section start here -->
+    <header>
+          <div class=" flex flex-col sm:flex-row justify-between items-center max-w-7xl mx-auto   ">
+            <div class="flex flex-col sm:flex-row my-auto  gap-4">
+                  <figure class="max-w-[70px] max-h-[70px] m-auto ">
+                    <img src="./assets/logo.png" alt="">
+                  </figure>
+
+                 <div class=" ">
+           <h1 class="text-[#006747] whitespace-nowrap text-2xl  flex flex-row sm:flex-col sm:text-3xl  font-bold">
+                <span> Emergency </span>
+                <span>Service</span>
+        </h1>
+                 </div>
+            </div>
+            <div class="   flex justify-between sm:items-center gap-5  sm:mt-0  mt-5 ">
+                <div class="w-[123px] h-[52px] rounded-3xl flex gap-2 justify-center bg-[#41ff6b1a] items-center">
+                    <h1 id="loveCount" class="font-black ">0</h1>
+                    <figure class="w-[30px] h-[30px]"><img src="./assets/heart.png" alt=""></figure>
+                </div>
+                 <div class="w-[123px] h-[52px] flex gap-2 rounded-3xl  justify-center bg-[#41ff6b1a] items-center">
+                    <h1 id="cointCount" class="font-black ">100</h1>
+                    <figure class="w-[30px] h-[30px]"><img src="./assets/coin.png" alt=""></figure>
+                </div>
+                 <div class="w-[123px] h-[52px] rounded-3xl flex justify-center bg-[#00A63E] items-center">
+                    <h1 class="text-white font-semibold text-lg flex gap-2"><span id="copyCount" >2</span>Copy</h1>
+                   
+                </div>
+            </div>
+          </div>
+    </header>
 
     <script src="./script.js"></script>
 </body>
