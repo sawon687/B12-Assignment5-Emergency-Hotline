@@ -15,7 +15,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="font['Hind Madurai']">
+<body class="font['Hind Madurai'] ">
   <!-- header section start here -->
   <header>
     <div class=" flex flex-col sm:flex-row justify-between items-center max-w-7xl mx-auto  p-5">
@@ -33,11 +33,11 @@
       </div>
       <div class="  flex justify-between sm:items-center gap-5  sm:mt-0  mt-5 ">
         <div class="w-[123px] h-[52px] rounded-3xl flex gap-2 justify-center bg-[#41ff6b1a] items-center">
-          <h1 id="loveCount" class="font-black font-['Inter'] ">0</h1>
+          <h1 id="loveCount" class="font-black  ">0</h1>
           <figure class="w-[30px] h-[30px]"><img src="./assets/heart.png" alt=""></figure>
         </div>
         <div class="w-[123px] h-[52px] flex gap-2 rounded-3xl  justify-center bg-[#41ff6b1a] items-center">
-          <h1 id="cointCount" class="font-black font-['Inter']">100</h1>
+          <h1 id="cointCount" class="font-black ">100</h1>
           <figure class="w-[30px] h-[30px]"><img src="./assets/coin.png" alt=""></figure>
         </div>
         <div class="w-[123px] h-[52px] rounded-3xl flex justify-center bg-[#00A63E] items-center">
@@ -85,7 +85,7 @@
                   <img class="w-[30px] h-[30px] " src="./assets/emergency.png" alt="">
                 </figure>
                 <button>
-                  <i class="fa-regular fa-heart text-[1.5rem]"></i>
+                  <i class="fa-regular fa-heart  text-[1.5rem]"></i>
                 </button>
               </div>
 
@@ -432,8 +432,31 @@
 
           </div>
         </div>
-        <div class="col-span-3 bg-pink-500">
-          <h1>nirob</h1>
+        <!-- Call History section -->
+        <div class="col-span-3 bg-white shadow-sm rounded-xl">
+          <div class="flex  justify-between p-5 items-center">
+            <h1 class="text-xl text-[#111111] font-medium flex gap-2 items-center"><i class="fa-regular fa-clock"></i>Call History </h1>
+            <button class=" bg-[#00A63E] px-10 py-2 rounded-3xl text-white">Clear</button>
+          </div>
+
+          <div class="" id="history-container"></div>
+            <div class="bg-gray-100 w-72 my-3 p-5  mx-auto h-16 rounded-lg shadow-md flex justify-between items-center ">
+            <div><h1 class="text-[#111111] font-semibold">Fire Service Number</h1>
+              <h2>999</h2>
+              </div>
+              <div>
+                <span>11:36:58 AM</span>
+              </div>
+            </div>
+
+             <div class="bg-gray-100 w-72 my-1 p-5  mx-auto h-16 rounded-lg shadow-md flex justify-between items-center ">
+            <div><h1 class="text-[#111111] font-semibold">Fire Service Number</h1>
+              <h2>999</h2>
+              </div>
+              <div>
+                <span>11:36:58 AM</span>
+              </div>
+            </div>
         </div>
       </div>
     </section>
