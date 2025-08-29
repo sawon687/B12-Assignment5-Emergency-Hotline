@@ -13,9 +13,37 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+    <!-- Google Font Hind Madurai link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google font Roboto link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google font Inter link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+<!-- css link -->
+
+<link rel="stylesheet" href=".styles.css">
 </head>
 
-<body class="font['Hind Madurai'] ">
+<body>
   <!-- header section start here -->
   <header>
     <div class=" flex flex-col sm:flex-row justify-between items-center max-w-[1430px] mx-auto  p-5">
@@ -26,22 +54,22 @@
 
         <div class=" ">
           <h1 class="text-[#006747] whitespace-nowrap text-2xl  flex flex-row sm:flex-col sm:text-3xl  font-bold">
-            <span> Emergency </span>
+            <span > Emergency </span>
             <span>Service</span>
           </h1>
         </div>
       </div>
       <div class="  flex justify-between sm:items-center gap-5  sm:mt-0  mt-5 ">
         <div class="w-[123px] h-[52px] rounded-3xl flex gap-2 justify-center bg-[#41ff6b1a] items-center">
-          <h1 id="loveCount" class="font-black  ">0</h1>
+          <h1 id="loveCount" class="font-black  fontInter">0</h1>
           <figure class="w-[30px] h-[30px]"><img src="./assets/heart.png" alt=""></figure>
         </div>
         <div class="w-[123px] h-[52px] flex gap-2 rounded-3xl  justify-center bg-[#41ff6b1a] items-center">
-          <h1 id="avaliblecoin" class="font-black ">100</h1>
+          <h1 id="avaliblecoin" class="font-black fontInter">100</h1>
           <figure class="w-[30px] h-[30px]"><img src="./assets/coin.png" alt=""></figure>
         </div>
         <div class="w-[123px] h-[52px] rounded-3xl flex justify-center bg-[#00A63E] items-center">
-          <h1 class="text-white font-['Inter'] font-semibold text-lg flex gap-2"><span id="copyCount">0</span>Copy</h1>
+          <h1 class="text-white font-bold text-lg flex gap-2 fontInter"><span id="copyCount">0</span>Copy</h1>
 
         </div>
       </div>
@@ -57,10 +85,10 @@
           <img src="./assets/logo-dark.png" alt="">
         </figure>
 
-        <h1 class="text-white text-[2.6rem] font-bold text-center">Emergency Service Directory</h1><br>
+        <h1 class="text-white text-[2.6rem] font-bold text-center fontHind" >Emergency Service Directory</h1><br>
 
 
-        <h2 class="text-white font-semibold text-xl text-center ">Government Emergency Services at Your Fingertip – A
+        <h2 class="text-white font-semibold text-xl text-center fontHind ">Government Emergency Services at Your Fingertip – A
           Project by Government of the People’s Republic of Bangladesh</h2><br>
 
       </div>
@@ -83,17 +111,17 @@
             <figure class="w-[50px] h-[50px] bg-[#ffe3e2] flex items-center justify-center rounded-lg">
               <img src="./assets/emergency.png" class="w-[30px] h-[30px]" alt="">
             </figure>
-            <button class="heartBtn"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
+            <button class="heartBtn cursor-pointer"><i class="fa-regular fa-heart text-[1.5rem] "></i></button>
           </div>
           <div>
-            <h1 class="title text-[#111111] text-xl font-bold">National Emergency Number</h1>
-            <h2 class="text-[#5c5c5c] text-sm font-semibold">National Emergency</h2>
-            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold">999</h1>
+            <h1 class="title text-[#111111] text-xl font-bold fontHind">National Emergency Number</h1>
+            <h2 class="text-[#5c5c5c] text-sm font-semibold fontRoboto">National Emergency</h2>
+            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold fontRoboto">999</h1>
             <button class="btn btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">All</button>
           </div>
           <div class="flex justify-center gap-2 py-2">
             <button class="btn copBtn px-10 text-[#5c5c5c] text-base"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn hover:bg-green-700 cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
 
@@ -103,17 +131,17 @@
             <figure class="w-[50px] h-[50px] bg-[#ffe3e2] flex items-center justify-center rounded-lg">
               <img src="./assets/police.png" class="w-[30px] h-[30px]" alt="">
             </figure>
-            <button class="heartBtn"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
+            <button class="heartBtn cursor-pointer"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
           </div>
           <div>
-            <h1 class="title text-[#111111] text-xl font-bold">Police Helpline Number</h1>
-            <h2 class="text-[#5c5c5c] text-sm font-semibold">Police</h2>
-            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold">999</h1>
+            <h1 class="title text-[#111111] text-xl font-bold fontHind">Police Helpline Number</h1>
+            <h2 class="text-[#5c5c5c] text-sm font-semibold fontRoboto">Police</h2>
+            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold fontRoboto">999</h1>
             <button class="btn btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">Police</button>
           </div>
           <div class="flex justify-center gap-2 py-2">
             <button class="btn copBtn px-10 text-[#5c5c5c] text-base"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn hover:bg-green-700 cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
 
@@ -123,17 +151,17 @@
             <figure class="w-[50px] h-[50px] bg-[#ffe3e2] flex items-center justify-center rounded-lg">
               <img src="./assets/fire-service.png" class="w-[30px] h-[30px]" alt="">
             </figure>
-            <button class="heartBtn"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
+            <button class="heartBtn cursor-pointer"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
           </div>
           <div>
-            <h1 class="title text-[#111111] text-xl font-bold">Fire Service Number</h1>
-            <h2 class="text-[#5c5c5c] text-sm font-semibold">Fire Service</h2>
-            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold">999</h1>
-            <button class="btn btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">Fire</button>
+            <h1 class="title text-[#111111] text-xl font-bold fontHind">Fire Service Number</h1>
+            <h2 class="text-[#5c5c5c] text-sm font-semibold fontRoboto">Fire Service</h2>
+            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold fontRoboto">999</h1>
+            <button class="bt btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">Fire</button>
           </div>
           <div class="flex justify-center gap-2 py-2">
             <button class="btn copBtn px-10 text-[#5c5c5c] text-base"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn hover:bg-green-700 cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
 
@@ -143,17 +171,17 @@
             <figure class="w-[50px] h-[50px] bg-[#ffe3e2] flex items-center justify-center rounded-lg">
               <img src="./assets/ambulance.png" class="w-[30px] h-[30px]" alt="">
             </figure>
-            <button class="heartBtn"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
+            <button class="heartBtn cursor-pointer"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
           </div>
           <div>
-            <h1 class="title text-[#111111] text-xl font-bold">Ambulance Service</h1>
-            <h2 class="text-[#5c5c5c] text-sm font-semibold">Ambulance</h2>
-            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold">1994-999999</h1>
-            <button class="btn btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">Health</button>
+            <h1 class="title text-[#111111] text-xl font-bold fontHind">Ambulance Service</h1>
+            <h2 class="text-[#5c5c5c] text-sm font-semibold fontRoboto">Ambulance</h2>
+            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold fontRoboto">1994-999999</h1>
+            <button class="btn  btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">Health</button>
           </div>
           <div class="flex justify-center gap-2 py-2">
             <button class="btn copBtn px-10 text-[#5c5c5c] text-base"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn hover:bg-green-700 cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
 
@@ -163,17 +191,17 @@
             <figure class="w-[50px] h-[50px] bg-[#ffe3e2] flex items-center justify-center rounded-lg">
               <img src="./assets/emergency.png" class="w-[30px] h-[30px]" alt="">
             </figure>
-            <button class="heartBtn"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
+            <button class="heartBtn cursor-pointer"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
           </div>
           <div>
-            <h1 class="title text-[#111111] text-xl font-bold">Women & Child Helpline</h1>
-            <h2 class="text-[#5c5c5c] text-sm font-semibold">Women & Child Helpline</h2>
-            <h1 class=" callNumber text-[#111111] my-3 text-[1.7rem] font-bold">109</h1>
+            <h1 class="title text-[#111111] text-xl font-bold fontHind">Women & Child Helpline</h1>
+            <h2 class="text-[#5c5c5c] text-sm font-semibold fontRoboto">Women & Child Helpline</h2>
+            <h1 class=" callNumber text-[#111111] my-3 text-[1.7rem] font-bold fontRoboto">109</h1>
             <button class="btn copBtn btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">Help</button>
           </div>
           <div class="flex justify-center gap-2 py-2">
             <button class="btn copBtn px-8 text-[#5c5c5c] text-base"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn hover:bg-green-700 cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
 
@@ -183,17 +211,17 @@
             <figure class="w-[50px] h-[50px] bg-[#ffe3e2] flex items-center justify-center rounded-lg">
               <img src="./assets/emergency.png" class="w-[30px] h-[30px]" alt="">
             </figure>
-            <button class="heartBtn"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
+            <button class="heartBtn cursor-pointer"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
           </div>
           <div>
-            <h1 class="title text-[#111111] text-xl font-bold">Anti-Corruption Helpline</h1>
-            <h2 class="text-[#5c5c5c] text-sm font-semibold">Anti-Corruption</h2>
-            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold">999</h1>
+            <h1 class="title text-[#111111] text-xl font-bold fontHind ">Anti-Corruption Helpline</h1>
+            <h2 class="text-[#5c5c5c] text-sm font-semibold fontRoboto">Anti-Corruption</h2>
+            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold fontRoboto">999</h1>
             <button class="btn btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">Govt.</button>
           </div>
           <div class="flex justify-center gap-2 py-2">
             <button class="btn copBtn px-8 text-[#5c5c5c] text-base"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn hover:bg-green-700 cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
 
@@ -203,17 +231,17 @@
             <figure class="w-[50px] h-[50px] bg-[#ffe3e2] flex items-center justify-center rounded-lg">
               <img src="./assets/emergency.png" class="w-[30px] h-[30px]" alt="">
             </figure>
-            <button class="heartBtn"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
+            <button class="heartBtn cursor-pointer"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
           </div>
           <div>
-            <h1 class="title text-[#111111] text-xl font-bold">Electricity Helpline</h1>
-            <h2 class="text-[#5c5c5c] text-sm font-semibold">Electricity Outage</h2>
-            <h1 class=" callNumber text-[#111111] my-3 text-[1.7rem] font-bold">16216</h1>
+            <h1 class="title text-[#111111] text-xl font-bold fontHind">Electricity Helpline</h1>
+            <h2 class="text-[#5c5c5c] text-sm font-semibold fontRoboto">Electricity Outage</h2>
+            <h1 class=" callNumber text-[#111111] my-3 text-[1.7rem] font-bold fontRoboto">16216</h1>
             <button class="btn btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">Electricity</button>
           </div>
           <div class="flex justify-center gap-2 py-2">
             <button class="btn copBtn px-10 text-[#5c5c5c] text-base"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn hover:bg-green-700 cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
 
@@ -223,17 +251,17 @@
             <figure class="w-[50px] h-[50px] bg-[#ffe3e2] flex items-center justify-center rounded-lg">
               <img src="./assets/brac.png" class="w-[30px] h-[30px]" alt="">
             </figure>
-            <button class="heartBtn"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
+            <button class="heartBtn cursor-pointer"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
           </div>
           <div>
-            <h1 class="title text-[#111111] text-xl font-bold">Brac Helpline</h1>
-            <h2 class="text-[#5c5c5c] text-sm font-semibold">Brac</h2>
-            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold">16445</h1>
+            <h1 class="title text-[#111111] text-xl font-bold fontHind">Brac Helpline</h1>
+            <h2 class="text-[#5c5c5c] text-sm font-semibold fontRoboto">Brac</h2>
+            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold fontRoboto">16445</h1>
             <button class="btn btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">NGO</button>
           </div>
           <div class="flex justify-center gap-2 py-2">
-            <button class="btn copBtn px-10 text-[#5c5c5c] text-base"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn copBtn px-10 text-[#5c5c5c] text-base "><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn hover:bg-green-700 cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold "><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
 
@@ -243,17 +271,17 @@
             <figure class="w-[50px] h-[50px] bg-[#ffe3e2] flex items-center justify-center rounded-lg">
               <img src="./assets/Bangladesh-Railway.png" class="w-[30px] h-[30px]" alt="">
             </figure>
-            <button class="heartBtn"><i class="fa-regular fa-heart text-[1.5rem]"></i></button>
+            <button class="heartBtn "><i class="fa-regular fa-heart text-[1.5rem] "></i></button>
           </div>
           <div class="text-content">
-            <h1 class="title text-[#111111] text-xl font-bold">Bangladesh Railway Helpline</h1>
-            <h2 class="text-[#5c5c5c] text-sm font-semibold">Bangladesh Railway</h2>
-            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold">163</h1>
+            <h1 class="title text-[#111111] text-xl font-bold fontHind">Bangladesh Railway Helpline</h1>
+            <h2 class="text-[#5c5c5c] text-sm font-semibold fontRoboto">Bangladesh Railway</h2>
+            <h1 class="callNumber text-[#111111] my-3 text-[1.7rem] font-bold fontRoboto">163</h1>
             <button class="btn btn-soft -mt-2 rounded-3xl text-sm text-[#5c5c5c]">Travel</button>
           </div>
           <div class="flex justify-center gap-2 py-2">
-            <button class="btn copBtn px-10 text-[#5c5c5c] text-base"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="btn cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn copBtn px-10 text-[#5c5c5c] text-base "><i class="fa-regular fa-copy"></i> Copy</button>
+            <button class="btn hover:bg-green-700 cal-btn px-12 bg-[#00A63E] text-white text-base font-semibold "><i class="fa-solid fa-phone"></i> Call</button>
           </div>
         </div>
 
@@ -266,7 +294,7 @@
     <div class="lg:col-span-3    lg:w-[350px]   p-3 bg-white shadow-sm rounded-xl mt-5 lg:mt-0">
       <div class="flex justify-between  items-center">
         <h1 class="text-xl text-[#111111] font-medium flex gap-2 items-center"><i class="fa-regular fa-clock"></i> Call History</h1>
-        <button id="clearBtn" class="bg-[#00A63E] px-10 py-2 rounded-3xl text-white">Clear</button>
+        <button id="clearBtn" class="hover:bg-green-700 cursor-pointer bg-[#00A63E] px-10 py-2 rounded-3xl text-white fontInter ">Clear</button>
       </div>
      <div id="history-container" class="flex flex-col gap-3 pt-3">
    

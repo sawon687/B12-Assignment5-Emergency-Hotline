@@ -48,7 +48,7 @@ function createCallHistory(titleText,callNum,time) {
         <h1 class="text-[#111111] text-lg font-semibold text-ellipsis ">
         ${titleText}
         </h1>
-        <h2 class="text-[#5c5c5c] font-semibol text-sm">${callNum}</h2>
+        <h2 class="text-[#5c5c5c] font-semibold text-sm">${callNum}</h2>
       </div>
 
       <!-- Right: time -->
@@ -65,7 +65,7 @@ function createCallHistory(titleText,callNum,time) {
 
 // clearBtn function
 function clearBtn() {
-   const clearBtn= getElement('clearBtn').addEventListener('click',function () {
+   getElement('clearBtn').addEventListener('click',function () {
       const container=getElement('history-container');
       container.innerHTML='';
    })
@@ -84,7 +84,8 @@ clearBtn()
       {
          callbtn.addEventListener('click',function(e) {
           
-      
+         
+        
     //  dom traversing text titile and call number  start here section
 
      const title= callbtn.parentElement.parentElement.children[1].querySelector('.title')
@@ -104,11 +105,11 @@ clearBtn()
                        
         if(avalibleCoinInner >=20) {
             
-            alert(`📞${titleText} ${callNum}`);
+            alert(`📞Calling ${titleText} ${callNum}`);
             reduceCoinUpdate(avalibleCoinInner,avalibleCoin);
             createCallHistory(titleText,callNum,time);
         } else {
-            alert("❌Not enough coins!");
+            alert("❌ You have no coins! At least, you need to call 20 coins ");
         } 
     
 
@@ -118,12 +119,12 @@ clearBtn()
        
 
       }
-      
+
         let copyCount=0;
 
       // copy function
    function copyTextandCountCopy() {
-     const copyCountBtn=document.getElementById('copyCount')
+     const copyCountBtn=getElement('copyCount')
     const copyBtns=  document.getElementsByClassName('copBtn')
   
       
